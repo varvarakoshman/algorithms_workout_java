@@ -4,10 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TwoSum {
-    public int[] twoSum(int[] nums, int target) {
+    public static int[] twoSum(int[] nums, int target) {
         // key - remainder, value - index of the 1st number
         Map<Integer, Integer> remainderIndexesMap = new HashMap<>();
-        for (int i=0; i < nums.length; i++) {
+        for (int i=0; i < nums.length; ++i) {
             int currentRemainder = target - nums[i];
             if (remainderIndexesMap.containsKey(nums[i])) {
                 return new int[]{remainderIndexesMap.get(nums[i]), i};
@@ -17,5 +17,9 @@ public class TwoSum {
             }
         }
         return new int[]{};
+    }
+
+    public static void main(String[] args) {
+        twoSum(new int[]{1, 2, 3, 4, 5}, 1);
     }
 }
