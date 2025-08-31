@@ -3,7 +3,7 @@ package leetcode.medium;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-class MinStack {
+public class MinStack {
 
     private Deque<Integer> stack;
     private Deque<Integer> minStack;

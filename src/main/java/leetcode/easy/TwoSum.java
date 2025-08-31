@@ -19,6 +19,35 @@ public class TwoSum {
         return new int[]{};
     }
 
+
+
+//
+//    public int[] twoSum(int[] nums, int target) {
+//        Map<Integer, Integer> remainders = new HashMap<>();
+//        for (int i = 0; i < nums.length; i ++) {
+//            if (remainders.containsKey(nums[i])) {
+//                return new int[] {remainders.get(nums[i]), i};
+//            }
+//            remainders.put(target - nums[i], i);
+//        }
+//        return null;
+//    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public static void main(String[] args) {
         twoSum(new int[]{1, 2, 3, 4, 5}, 1);
     }
